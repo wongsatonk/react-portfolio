@@ -9,15 +9,23 @@ import IconButton from "@mui/material/IconButton";
 import Box from "@mui/material/Box";
 import MenuIcon from "@mui/icons-material/Menu";
 import Menu from "@mui/material/Menu";
-import { Avatar, Button, Icon, MenuItem, Tooltip } from "@mui/material";
+import {
+  Avatar,
+  Button,
+  duration,
+  Icon,
+  MenuItem,
+  Tooltip,
+} from "@mui/material";
+import { scroller } from "react-scroll";
 
 const pages = [
-  "Education",
-  "Skills",
-  "Experience",
-  "Portfolio",
-  "Clients",
-  "Contact",
+  { name: "Education", id: "education" },
+  { name: "Skills", id: "skills" },
+  { name: "Experience", id: "experience" },
+  { name: "Portfolio", id: "portfolio" },
+  { name: "Clients", id: "clients" },
+  { name: "Contact", id: "contact" },
 ];
 const settings = ["Facebook", "Instagram", "LinkedIn"];
 
@@ -39,6 +47,16 @@ function Header() {
 
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
+  };
+
+  const handleScroll = (id) => {
+    scroller.scrollTo(id, {
+      duration: 900,
+      delay: 0,
+      smooth: "easeInOutQuart",
+    });
+
+    handleCloseNavMenu();
   };
 
   return (
@@ -81,6 +99,8 @@ function Header() {
             >
               <MenuIcon />
             </IconButton>
+
+            {/* Menu collapse app bar */}
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
@@ -100,8 +120,12 @@ function Header() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem
+                  key={page.id}
+                  onClick={() => handleScroll(page.id)}
+                  sx={{ my: 2, color: "white", display: "block" }}
+                >
+                  <Typography textAlign="center">{page.name}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -127,14 +151,16 @@ function Header() {
           >
             Wongsatonk
           </Typography>
+
+          {/* Expand app bar */}
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
-                key={page}
-                onClick={handleCloseNavMenu}
+                key={page.id}
+                onClick={() => handleScroll(page.id)}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                {page}
+                {page.name}
               </Button>
             ))}
           </Box>
