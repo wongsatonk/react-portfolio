@@ -1,50 +1,27 @@
 import React from "react";
-import { Button, CssBaseline } from "@mui/material";
+import { Button, CssBaseline, Typography } from "@mui/material";
 import Header from "./components/Header";
 import theme from "./theme";
 import { ThemeProvider } from "@emotion/react";
 import Section from "./components/Section";
+import Introduce from "./components/Introduce";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Header></Header>
-      <Section
-        id="introduce"
-        title="Introduce"
-        content="Details about your introduce."
-      />
-      <Section
-        id="education"
-        title="Education"
-        content="Details about your education."
-      />
-      <Section
-        id="skills"
-        title="Skills"
-        content="Details about your skills."
-      />
-      <Section
-        id="experience"
-        title="Experience"
-        content="Details about your experience."
-      />
-      <Section
-        id="portfolio"
-        title="Portfolio"
-        content="Details about your portfolio."
-      />
-      <Section
-        id="clients"
-        title="Clients"
-        content="Details about your clients."
-      />
-      <Section
-        id="contact"
-        title="Contact"
-        content="Details about how to contact you."
-      />
+      <Section id="introduce" title="Me">
+        <Introduce></Introduce>
+      </Section>
+
+      <Section id="education" title="Education" />
+
+      <Section id="skills" title="Skills" />
+      <Section id="experience" title="Experience" />
+      <Section id="portfolio" title="Portfolio" />
+      <Section id="clients" title="Clients" />
+      <Section id="contact" title="Contact" />
     </ThemeProvider>
   );
 }

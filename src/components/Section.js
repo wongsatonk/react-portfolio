@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 
-function Section({ id, title, content }) {
+function Section({ id, title, children }) {
   return (
     <Box
       id={id}
@@ -17,10 +17,8 @@ function Section({ id, title, content }) {
       }}
     >
       <Box>
-        <Typography variant="h4" component="h2" gutterBottom>
-          {title}
-        </Typography>
-        <Typography variant="body1">{content}</Typography>
+        <Typography variant="h1">{title}</Typography>
+        {children}
       </Box>
     </Box>
   );

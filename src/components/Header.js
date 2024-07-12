@@ -109,7 +109,7 @@ function Header(props) {
             variant="h6"
             noWrap
             component="a"
-            href="app-bar-with-responsive-menu"
+            href="/"
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
@@ -237,12 +237,13 @@ function Header(props) {
             </Menu>
           </Box>
         </Toolbar>
-        <ScrollTop {...props}>
-          <Fab size="small" aria-label="scroll back to top">
-            <KeyboardArrowUpIcon />
-          </Fab>
-        </ScrollTop>
       </Container>
+
+      <ScrollTop {...props}>
+        <Fab size="small" aria-label="scroll back to top">
+          <KeyboardArrowUpIcon />
+        </Fab>
+      </ScrollTop>
     </AppBar>
   );
 }
