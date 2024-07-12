@@ -6,16 +6,20 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import AdbIcon from "@mui/icons-material/Adb";
 import IconButton from "@mui/material/IconButton";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import Box from "@mui/material/Box";
 import MenuIcon from "@mui/icons-material/Menu";
 import Menu from "@mui/material/Menu";
 import {
   Avatar,
   Button,
+  Fab,
   duration,
   Icon,
   MenuItem,
   Tooltip,
+  Fade,
+  useScrollTrigger,
 } from "@mui/material";
 import { scroller } from "react-scroll";
 
@@ -29,7 +33,42 @@ const pages = [
 ];
 const settings = ["Facebook", "Instagram", "LinkedIn"];
 
-function Header() {
+function ScrollTop(props) {
+  const { children, window } = props;
+  const trigger = useScrollTrigger({
+    target: window ? window() : undefined,
+    disableHysteresis: true,
+    threshold: 100,
+  });
+
+  const handleClick = (e) => {
+    const anchor = (e.target.ownerDocument || document).querySelector(
+      "#toolbar"
+    );
+
+    if (anchor) {
+      scroller.scrollTo("toolbar", {
+        duration: 900,
+        delay: 0,
+        smooth: "easeInOutQuart",
+      });
+    }
+  };
+
+  return (
+    <Fade in={trigger}>
+      <Box
+        onClick={handleClick}
+        role="presentation"
+        sx={{ position: "fixed", bottom: 16, right: 16 }}
+      >
+        {children}
+      </Box>
+    </Fade>
+  );
+}
+
+function Header(props) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -62,7 +101,7 @@ function Header() {
   return (
     <AppBar position="static">
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
+        <Toolbar disableGutters id="toolbar">
           <AdbIcon
             sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
           ></AdbIcon>
@@ -198,6 +237,11 @@ function Header() {
             </Menu>
           </Box>
         </Toolbar>
+        <ScrollTop {...props}>
+          <Fab size="small" aria-label="scroll back to top">
+            <KeyboardArrowUpIcon />
+          </Fab>
+        </ScrollTop>
       </Container>
     </AppBar>
   );

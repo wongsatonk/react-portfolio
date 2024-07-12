@@ -11,6 +11,11 @@ function App() {
       <CssBaseline />
       <Header></Header>
       <Section
+        id="introduce"
+        title="Introduce"
+        content="Details about your introduce."
+      />
+      <Section
         id="education"
         title="Education"
         content="Details about your education."
