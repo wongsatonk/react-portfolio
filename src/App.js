@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, CssBaseline, Typography } from "@mui/material";
+import { CssBaseline } from "@mui/material";
 import Header from "./components/Header";
 import theme from "./theme";
 import { ThemeProvider } from "@emotion/react";
@@ -16,10 +16,9 @@ function App() {
       </Section>
 
       <Section id="education" title="Education" />
-
       <Section id="skills" title="Skills" />
       <Section id="experience" title="Experience" />
-      <Section id="portfolio" title="Portfolio" />
+      <Section id="projects" title="Projects" />
       <Section id="clients" title="Clients" />
       <Section id="contact" title="Contact" />
     </ThemeProvider>

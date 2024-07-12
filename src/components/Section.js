@@ -6,7 +6,7 @@ function Section({ id, title, children }) {
     <Box
       id={id}
       sx={{
-        height: "100vh",
+        height: "80vh",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
