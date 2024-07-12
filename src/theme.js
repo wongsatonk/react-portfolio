@@ -18,6 +18,9 @@ const theme = createTheme({
     accent: {
       main: "#C678DD",
     },
+    divider: {
+      main: "#C678DD",
+    },
   },
   typography: {
     fontFamily: "Roboto, sans-serif",

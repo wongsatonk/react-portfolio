@@ -5,6 +5,7 @@ import theme from "./theme";
 import { ThemeProvider } from "@emotion/react";
 import Section from "./components/Section";
 import Introduce from "./components/Introduce";
+import Education from "./components/Education";
 
 function App() {
   return (
@@ -15,7 +16,9 @@ function App() {
         <Introduce></Introduce>
       </Section>
 
-      <Section id="education" title="Education" />
+      <Section id="education" title="Education">
+        <Education></Education>
+      </Section>
       <Section id="skills" title="Skills" />
       <Section id="experience" title="Experience" />
       <Section id="projects" title="Projects" />
