@@ -21,7 +21,7 @@ const pages = [
 ];
 const settings = ["Facebook", "Instagram", "LinkedIn"];
 
-function Header(props) {
+function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -42,7 +42,7 @@ function Header(props) {
   };
 
   return (
-    <AppBar position="static" color={props.theme}>
+    <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon

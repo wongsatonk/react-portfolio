@@ -1,17 +1,17 @@
 import React from "react";
-import { Button } from "@mui/material";
+import { Button, CssBaseline } from "@mui/material";
 import Header from "./components/Header";
+import theme from "./theme";
+import { ThemeProvider } from "@emotion/react";
 
 function App() {
-  const theme = "primary";
   return (
-    <div>
-      <Header theme={theme}></Header>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Header></Header>
       <h1>My Portfolio</h1>
-      <Button variant="contained" color={theme}>
-        Hello World
-      </Button>
-    </div>
+      <Button variant="contained">Hello World</Button>
+    </ThemeProvider>
   );
 }
 
