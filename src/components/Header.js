@@ -14,8 +14,6 @@ import {
   Avatar,
   Button,
   Fab,
-  duration,
-  Icon,
   MenuItem,
   Tooltip,
   Fade,
@@ -27,7 +25,7 @@ const pages = [
   { name: "Education", id: "education" },
   { name: "Skills", id: "skills" },
   { name: "Experience", id: "experience" },
-  { name: "Portfolio", id: "portfolio" },
+  { name: "Projects", id: "projects" },
   { name: "Clients", id: "clients" },
   { name: "Contact", id: "contact" },
 ];
