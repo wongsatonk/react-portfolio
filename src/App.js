@@ -9,6 +9,7 @@ import Education from "./components/Education";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
+import Clients from "./components/Clients";
 
 function App() {
   return (
@@ -35,7 +36,9 @@ function App() {
         <Projects></Projects>
       </Section>
 
-      <Section id="clients" title="Clients" />
+      <Section id="clients" title="Clients">
+        <Clients></Clients>
+      </Section>
       <Section id="contact" title="Contact" />
     </ThemeProvider>
   );
