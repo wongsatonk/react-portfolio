@@ -21,7 +21,7 @@ function SkillCard(props) {
           primary={props.primary}
           secondary={
             <Typography
-              sx={{ display: "block", maxWidth: 360 }}
+              sx={{ display: "block", maxWidth: 400 }}
               component="span"
               variant="body2"
             >

@@ -226,19 +226,22 @@ const skills = [
       {
         id: "problemsolving",
         name: "Problem-Solving",
-        description: "",
+        description:
+          "Ability to identify issues, analyze root causes, and develop effective solutions. Involves critical thinking, creativity, and systematic approaches.",
         src: "https://cdn-icons-png.freepik.com/512/2021/2021691.png",
       },
       {
         id: "teamwork",
         name: "Teamwork",
-        description: "",
+        description:
+          "Collaboration with others to achieve common goals. Includes communication, empathy, and leveraging individual strengths for collective success.",
         src: "https://banner2.cleanpng.com/20180328/glq/kisspng-teamwork-logo-clip-art-teamwork-5abb81f6b65495.3312355715222379427468.jpg",
       },
       {
         id: "collaboration",
         name: "Collaboration",
-        description: "",
+        description:
+          "Working together with individuals or groups to achieve shared objectives. Involves communication, compromise, and leveraging diverse perspectives.",
         src: "https://cdn-icons-png.freepik.com/512/1083/1083497.png",
       },
     ],
