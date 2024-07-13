@@ -8,6 +8,7 @@ import Introduce from "./components/Introduce";
 import Education from "./components/Education";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -30,7 +31,10 @@ function App() {
         <Experience></Experience>
       </Section>
 
-      <Section id="projects" title="Projects" />
+      <Section id="projects" title="Projects">
+        <Projects></Projects>
+      </Section>
+
       <Section id="clients" title="Clients" />
       <Section id="contact" title="Contact" />
     </ThemeProvider>
