@@ -21,6 +21,9 @@ const theme = createTheme({
     divider: {
       main: "#C678DD",
     },
+    icon: {
+      main: "#ABB2BF",
+    },
   },
   typography: {
     fontFamily: "Roboto, sans-serif",

@@ -7,6 +7,7 @@ import Section from "./components/Section";
 import Introduce from "./components/Introduce";
 import Education from "./components/Education";
 import Skills from "./components/Skills";
+import Experience from "./components/Experience";
 
 function App() {
   return (
@@ -24,7 +25,11 @@ function App() {
       <Section id="skills" title="Skills">
         <Skills></Skills>
       </Section>
-      <Section id="experience" title="Experience" />
+
+      <Section id="experience" title="Experience">
+        <Experience></Experience>
+      </Section>
+
       <Section id="projects" title="Projects" />
       <Section id="clients" title="Clients" />
       <Section id="contact" title="Contact" />

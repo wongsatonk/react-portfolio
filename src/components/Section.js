@@ -8,7 +8,7 @@ function Section({ id, title, children }) {
       sx={{
         // height: "80vh",
         display: "flex",
-        alignItems: "center",
+        alignItems: "left",
         justifyContent: "center",
         bgcolor: "background.paper",
         p: 2,
@@ -17,7 +17,7 @@ function Section({ id, title, children }) {
       }}
     >
       <Box>
-        <Typography variant="h1">{title}</Typography>
+        <Typography variant="h3">{title}</Typography>
         {children}
       </Box>
     </Box>
