@@ -28,6 +28,23 @@ const theme = createTheme({
   typography: {
     fontFamily: "Roboto, sans-serif",
   },
+  components: {
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          maxWidth: "400",
+          margin: "auto",
+          boxShadow: 3,
+          borderRadius: 2,
+          "&:hover": {
+            boxShadow: 6,
+            transform: "scale(1.03)",
+          },
+          transition: "transform 0.3s, box-shadow 0.3s",
+        },
+      },
+    },
+  },
 });
 
 export default theme;

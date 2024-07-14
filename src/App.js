@@ -10,36 +10,41 @@ import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Clients from "./components/Clients";
+import Contact from "./components/Contact";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Header></Header>
+      <Header />
+
       <Section id="introduce" title="Me">
-        <Introduce></Introduce>
+        <Introduce />
       </Section>
 
       <Section id="education" title="Education">
-        <Education></Education>
+        <Education />
       </Section>
 
       <Section id="skills" title="Skills">
-        <Skills></Skills>
+        <Skills />
       </Section>
 
       <Section id="experience" title="Experience">
-        <Experience></Experience>
+        <Experience />
       </Section>
 
       <Section id="projects" title="Projects">
-        <Projects></Projects>
+        <Projects />
       </Section>
 
       <Section id="clients" title="Clients">
-        <Clients></Clients>
+        <Clients />
       </Section>
-      <Section id="contact" title="Contact" />
+
+      <Section id="contact" title="Contact">
+        <Contact />
+      </Section>
     </ThemeProvider>
   );
 }
