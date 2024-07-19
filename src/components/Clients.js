@@ -21,7 +21,9 @@ function Clients() {
   return (
     <Container maxWidth="lg">
       <Stack
+        // direction={{ xs: "row", sm: "column" }}
         direction="row"
+        alignItems="flex-start"
         justifyContent="center"
         spacing={1}
         useFlexGap
@@ -30,7 +32,7 @@ function Clients() {
         margin={3}
       >
         {clientData.map((client) => (
-          <ImageList>
+          <ImageList cols={{ sx: 1, md: 2 }}>
             <ImageListItem key="Subheader" cols={2}>
               <ListSubheader component="div" color="inherit">
                 <Typography
