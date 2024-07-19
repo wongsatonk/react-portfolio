@@ -1,0 +1,66 @@
+[
+  {
+    "section": "oil-gas",
+    "name": "Oil & Gas Industrial",
+    "items": [
+      {
+        "img": "./clients/bangchak.png",
+        "title": "Bangchak",
+        "author": "@Surat Thani Terminal"
+      },
+      {
+        "img": "./clients/chevron.jpg",
+        "title": "Chevron",
+        "author": "@Surat Thani & Songkla Terminal"
+      },
+      {
+        "img": "./clients/esso.png",
+        "title": "Esso",
+        "author": "@Songkla Terminal"
+      },
+
+      {
+        "img": "./clients/siamgas.png",
+        "title": "SiamGas",
+        "author": "@Bang Pakong Terminal"
+      },
+      {
+        "img": "./clients/tep.png",
+        "title": "Thai Ethanol Power",
+        "author": "@Khon Kaen Terminal"
+      },
+      {
+        "img": "./clients/thappline.jpeg",
+        "title": "Thai Petroleum Pipeline",
+        "author": "@Saraburi Oil Terminal"
+      }
+    ]
+  },
+  {
+    "section": "solution-provider",
+    "name": "Solution Provide",
+    "items": [
+      {
+        "img": "./clients/eastwater.jpg",
+        "title": "East Water",
+        "author": "@Rayong Operations Center"
+      }
+    ]
+  },
+  {
+    "section": "industrial-automation",
+    "name": "Industrial Automation",
+    "items": [
+      {
+        "img": "./clients/marspetcare.jpg",
+        "title": "Mars Petcare Thailand",
+        "author": "@Pak Chong and Chonburi Factory"
+      },
+      {
+        "img": "./clients/pwa.jpg",
+        "title": "Provicial Waterworks Authority",
+        "author": "@Central Department"
+      }
+    ]
+  }
+]
