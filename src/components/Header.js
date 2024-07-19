@@ -4,7 +4,6 @@ import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import AdbIcon from "@mui/icons-material/Adb";
 import IconButton from "@mui/material/IconButton";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import Box from "@mui/material/Box";
@@ -100,9 +99,6 @@ function Header(props) {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters id="toolbar">
-          <AdbIcon
-            sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
-          ></AdbIcon>
           <Typography
             variant="h6"
             noWrap
@@ -167,9 +163,6 @@ function Header(props) {
               ))}
             </Menu>
           </Box>
-          <AdbIcon
-            sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}
-          ></AdbIcon>
           <Typography
             variant="h5"
             noWrap
