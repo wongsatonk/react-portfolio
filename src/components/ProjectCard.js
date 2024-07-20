@@ -1,7 +1,16 @@
-import React from "react";
+import React, { Children } from "react";
 import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
-import { CardActionArea, CardContent, CardMedia } from "@mui/material";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import {
+  Avatar,
+  CardActionArea,
+  CardContent,
+  CardMedia,
+  ListItemAvatar,
+  ListItemText,
+} from "@mui/material";
 import ProjectModal from "./ProjectModal";
 
 function ProjectCard(props) {
@@ -14,15 +23,33 @@ function ProjectCard(props) {
       <CardActionArea onClick={handleOpen}>
         <CardMedia
           component="img"
-          height="140"
-          src={props.src}
+          // width="100%"
+          // height="140"
+          src={props.src[0].src}
           alt={props.name}
-        />
+          style={{ backgroundColor: "white" }}
+        ></CardMedia>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             {props.name}
           </Typography>
           <Typography variant="body2">{props.description}</Typography>
+          <List sx={{ width: "100%" }}>
+            {props.tools.map((tool) => (
+              <ListItem alignItems="flex-start">
+                <ListItemAvatar>
+                  <Avatar
+                    alt={tool.name}
+                    src={tool.src}
+                    style={{ backgroundColor: "white" }}
+                  />
+                </ListItemAvatar>
+                <ListItemText>
+                  <Typography variant="caption">{tool.fullName}</Typography>
+                </ListItemText>
+              </ListItem>
+            ))}
+          </List>
         </CardContent>
       </CardActionArea>
 
@@ -32,6 +59,8 @@ function ProjectCard(props) {
         primary={props.name}
         text={props.description}
         src={props.src}
+        tools={props.tools}
+        details={props.details}
       />
     </Card>
   );
