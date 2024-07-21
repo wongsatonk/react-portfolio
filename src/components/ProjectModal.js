@@ -5,6 +5,7 @@ import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 import Typography from "@mui/material/Typography";
 import Carousel from "./Carousel";
+import CarouselVideo from "./CarouselVideo";
 import { Stack } from "@mui/material";
 
 function ProjectModal(props) {
@@ -35,14 +36,19 @@ function ProjectModal(props) {
             <Typography id="transition-modal-title" variant="h6" component="h2">
               {props.primary}
             </Typography>
-            <Carousel src={props.src} />
+            <Carousel
+              src={props.src
+                .filter((item) => item.type === "image")
+                .slice(0, props.src.length)}
+            />
             <Typography id="transition-modal-description" sx={{ mt: 2 }}>
               {props.text}
               <br />
-              {/* <video controls>
-                <source src={props.src[7]} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video> */}
+              <CarouselVideo
+                src={props.src
+                  .filter((item) => item.type === "video")
+                  .slice(0, props.src.length)}
+              />
               <br />
               {props.details}
             </Typography>
