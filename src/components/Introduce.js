@@ -6,12 +6,12 @@ import { ImageList, ImageListItem } from "@mui/material";
 
 const pictures = [
   {
-    img: "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/451087809_18444999997054723_6056703750782549849_n.jpg?stp=dst-jpegr&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=KUiiSLsYmicQ7kNvgEaBl5v&se=-1&_nc_ht=scontent-sea1-1.xx&oh=00_AYDPlHvW9W0j-FrfHXH35dCx36vit_ldJKmxihQ2AlBPJQ&oe=66991B2A",
+    img: "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/451087809_18444999997054723_6056703750782549849_n.jpg?stp=dst-jpegr&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=6eU9e2SwX5kQ7kNvgEzIAjf&se=-1&_nc_ht=scontent-sea1-1.xx&oh=00_AYDspKgslQ2i_gsUCVlIV3fuFmd-gN7Y-0nCioKZRW1qMg&oe=66A21D6A",
     rows: 2,
     cols: 2,
   },
   {
-    img: "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/438058918_18432929938054723_6555598635891533159_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=KsL6CCgpib0Q7kNvgFRYuJA&_nc_ht=scontent-sea1-1.xx&oh=00_AYADm0XB_BpmlSipf_whf_lb7dPi4uQ87nemy6X3_LWmNA&oe=6699386F",
+    img: "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/438058918_18432929938054723_6555598635891533159_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=IEy9d7ghDXUQ7kNvgHu-B7V&_nc_ht=scontent-sea1-1.xx&oh=00_AYCnUmiBH9nR4UISmktdq56YVbq2O_E2hYEGDJAbuirjng&oe=66A23AAF",
   },
   {
     img: "https://scontent-sea1-1.xx.fbcdn.net/v/t1.6435-9/39558039_1892090454220426_6402993096631517184_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=ca4fef&_nc_ohc=upPMH0OmfFAQ7kNvgEq6rKj&_nc_ht=scontent-sea1-1.xx&oh=00_AYAg3X0cVSNAORwSGfWQtL4pT4ChrRYaEafsGhevMYmI1Q&oe=66BD1A9E",
@@ -27,7 +27,7 @@ const pictures = [
     cols: 2,
   },
   {
-    img: "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/430051959_18421515460054723_5236181594907898657_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=JngiKA7HkJEQ7kNvgE69IUE&_nc_ht=scontent-sea1-1.xx&oh=00_AYCyv_J7Sho1XyZD9eHBehqs7HK-jmb9Yv-qwmXdctWO1w&oe=66993948",
+    img: "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/430051959_18421515460054723_5236181594907898657_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=8nKS0wBBSOAQ7kNvgGjybME&_nc_ht=scontent-sea1-1.xx&oh=00_AYCdwIYV8Z3B4wcbGXVAF43CaSaF5uIGorYJ7OqtId7Aog&oe=66A23B88",
 
     rows: 2,
     cols: 2,
