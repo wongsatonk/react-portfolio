@@ -3,7 +3,6 @@ import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import ProjectCard from "./ProjectCard";
-import Typography from "@mui/material/Typography";
 
 function Projects() {
   const projectListFileName = "project-list.json";
