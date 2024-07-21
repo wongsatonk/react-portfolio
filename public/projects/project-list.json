@@ -86,9 +86,21 @@
         "type": "image"
       },
       {
-        "name": "Video",
+        "name": "Application Showcase",
         "src": "/projects/iot/videos/application.mov",
-        "alt": "video",
+        "alt": "app-showcase",
+        "type": "video"
+      },
+      {
+        "name": "Food Pellet Showcase",
+        "src": "/projects/iot/videos/food-pellet.mp4",
+        "alt": "food-pellet-showcase",
+        "type": "video"
+      },
+      {
+        "name": "Water Inlet Showcase",
+        "src": "/projects/iot/videos/water-inlet.mp4",
+        "alt": "water-inlet-showcase",
         "type": "video"
       }
     ]

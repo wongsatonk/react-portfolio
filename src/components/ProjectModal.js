@@ -5,7 +5,7 @@ import Fade from "@mui/material/Fade";
 import Typography from "@mui/material/Typography";
 import Carousel from "./Carousel";
 import CarouselVideo from "./CarouselVideo";
-import { Stack } from "@mui/material";
+import Stack from "@mui/material/Stack";
 
 function ProjectModal(props) {
   return (
