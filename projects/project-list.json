@@ -1,0 +1,173 @@
+[
+  {
+    "id": "iot",
+    "name": "Internet Of Things",
+    "description": "Frog Farming using MQTT and Flutter framework, provided frogs' weight prediction using CNN algorithm",
+    "details": "The project involves developing an automated frog farming system using Internet of Things (IoT) technology to optimize feeding and water changes while predicting the weight of the frogs. By integrating Arduino Uno R3 for controlling feeding and water systems, and Raspberry Pi 3 Model B for machine learning-based weight prediction, the system provides real-time control and data storage on AWS platforms. This innovation aims to streamline farming operations, offer precise control, and enhance data-driven analysis for future improvements.",
+    "tools": [
+      {
+        "name": "flutter",
+        "fullName": "Flutter",
+        "description": "",
+        "src": "https://static-00.iconduck.com/assets.00/flutter-icon-256x256-ngd48v7a.png"
+      },
+      {
+        "name": "iot",
+        "fullName": "Internet of Things (IoT)",
+        "description": "",
+        "src": "https://cdn-icons-png.flaticon.com/512/6432/6432461.png"
+      },
+      {
+        "name": "raspi",
+        "fullName": "Raspberry Pi 3 Model B",
+        "description": "",
+        "src": "https://static-00.iconduck.com/assets.00/raspberry-pi-icon-2048x2048-p0y4r07x.png"
+      },
+      {
+        "name": "arduino",
+        "fullName": "Arduino Uno R3",
+        "description": "",
+        "src": "https://cdn.worldvectorlogo.com/logos/arduino-1.svg"
+      },
+      {
+        "name": "machine-learning",
+        "fullName": "Machine Learning (Single Shot Multiple Box - SSD",
+        "description": "",
+        "src": "https://cdn-icons-png.flaticon.com/512/8345/8345929.png"
+      },
+      {
+        "name": "cloud-computing",
+        "fullName": "Cloud Computing (AWS IoT Core, Amazon DynamoDB, Amazon S3)",
+        "description": "",
+        "src": "https://cdn.iconscout.com/icon/free/png-256/free-amazon-aws-3521268-2944772.png"
+      }
+    ],
+    "src": [
+      {
+        "name": "Control and Command System",
+        "src": "/projects/iot/pictures/control-command-system.png",
+        "alt": "control-command",
+        "type": "image"
+      },
+      {
+        "name": "Data Storage System",
+        "src": "/projects/iot/pictures/database-system.png",
+        "alt": "data-storage",
+        "type": "image"
+      },
+      {
+        "name": "Frog Weight Prediction System",
+        "src": "/projects/iot/pictures/weight-prediction-system.png",
+        "alt": "weight-prediction",
+        "type": "image"
+      },
+      {
+        "name": "Hardware's control system",
+        "src": "/projects/iot/pictures/control-devices.png",
+        "alt": "hardware-command",
+        "type": "image"
+      },
+      {
+        "name": "Amazon Services",
+        "src": "/projects/iot/pictures/aws-setup.png",
+        "alt": "aws-services",
+        "type": "image"
+      },
+      {
+        "name": "Weight Prediction Example",
+        "src": "/projects/iot/pictures/weight-prediction-exams.png",
+        "alt": "weight-prediction-exam",
+        "type": "image"
+      },
+      {
+        "name": "Application Example",
+        "src": "/projects/iot/pictures/application-exams.png",
+        "alt": "app-exam",
+        "type": "image"
+      },
+      {
+        "name": "Application Showcase",
+        "src": "/projects/iot/videos/application.mov",
+        "alt": "app-showcase",
+        "type": "video"
+      },
+      {
+        "name": "Food Pellet Showcase",
+        "src": "/projects/iot/videos/food-pellet.mp4",
+        "alt": "food-pellet-showcase",
+        "type": "video"
+      },
+      {
+        "name": "Water Inlet Showcase",
+        "src": "/projects/iot/videos/water-inlet.mp4",
+        "alt": "water-inlet-showcase",
+        "type": "video"
+      }
+    ]
+  },
+  {
+    "id": "e-document-tracking",
+    "name": "E-Document Tracking System",
+    "description": "Electronic document tracking system on iOS and Android using Embacadero Delphi and MSSQL",
+    "details": "Designed for Android and iOS platforms to streamline document management within the Electrical Engineering department. The application allows users to register using their employee or student ID, manage document records, receive notifications, and generate reports. Key features include admin, instructor, administrative staff, and student functionalities, all focused on efficient document tracking and management.",
+    "tools": [
+      {
+        "name": "delphi",
+        "fullName": "Embarcadero Delphi",
+        "description": "",
+        "src": "https://d2ohlsp9gwqc7h.cloudfront.net/images/logos/logo-page/made-with-delphi-logo-1024.png"
+      },
+      {
+        "name": "firemonkey",
+        "fullName": "Firemonkey",
+        "description": "",
+        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwDjL9pf_Tivbsm4lutT1xo2bpNdfaRKXNFg&s"
+      },
+      {
+        "name": "sql-server",
+        "fullName": "Microsoft SQL Server",
+        "description": "",
+        "src": "https://banner2.cleanpng.com/20180614/sg/kisspng-microsoft-sql-server-sql-server-management-studio-transactional-analysis-5b2207401c5992.0038138215289567361161.jpg"
+      }
+    ],
+
+    "src": [
+      {
+        "name": "E-Document Tracking System",
+        "src": "/projects/e-document/pictures/cover.png",
+        "alt": "cover",
+        "type": "image"
+      },
+      {
+        "name": "Application Example 1",
+        "src": "/projects/e-document/pictures/app-exam1.png",
+        "alt": "app-exam-1",
+        "type": "image"
+      },
+      {
+        "name": "Application Example 2",
+        "src": "/projects/e-document/pictures/app-exam1.png",
+        "alt": "app-exam-2",
+        "type": "image"
+      },
+      {
+        "name": "Application Example 3",
+        "src": "/projects/e-document/pictures/app-exam1.png",
+        "alt": "app-exam-3",
+        "type": "image"
+      },
+      {
+        "name": "Application Showcase 1",
+        "src": "/projects/e-document/videos/app-showcase.mp4",
+        "alt": "app-showcase-1",
+        "type": "video"
+      },
+      {
+        "name": "Application Showcase 2",
+        "src": "/projects/e-document/videos/app-showcase2.mp4",
+        "alt": "app-showcase-2",
+        "type": "video"
+      }
+    ]
+  }
+]
